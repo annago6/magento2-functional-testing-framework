@@ -92,6 +92,7 @@
         <seeNumberOfElements selector=".functionalTestSelector" stepKey="seeNumberOfElementsKey1"/>
         <seeOptionIsSelected selector=".functionalTestSelector" userInput="someInput" stepKey="seeOptionIsSelectedKey1" />
         <selectOption selector=".functionalTestSelector" stepKey="selectOptionKey1"/>
+        <selectMultipleOptions filterSelector=".filter" optionSelector=".option" parameterArray="['opt1', 'opt2']" stepKey="selectMultipleOpts1" />
         <setCookie value="someCookieValue" userInput="someInput" stepKey="setCookieKey1" />
         <switchToIFrame userInput="someInput" stepKey="switchToIFrameKey1"/>
         <switchToNextTab stepKey="switchToNextTabKey1"/>
