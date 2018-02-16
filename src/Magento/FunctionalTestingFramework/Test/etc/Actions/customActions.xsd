@@ -14,8 +14,7 @@
             <xs:element type="magentoCLIType" name="magentoCLI" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element type="closeAdminNotificationType" name="closeAdminNotification" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element type="searchAndMultiSelectOptionType" name="searchAndMultiSelectOption" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element type="selectMultipleOptionsType" name="selectMultipleOptions" minOccurs="0"
-                        maxOccurs="unbounded"/>
+            <xs:element type="selectMultipleOptionsType" name="selectMultipleOptions" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element type="formatMoneyType" name="formatMoney" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element type="parseFloatType" name="parseFloat" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element type="mSetLocaleType" name="mSetLocale" minOccurs="0" maxOccurs="unbounded"/>
@@ -104,10 +103,8 @@
                         </xs:documentation>
                     </xs:annotation>
                 </xs:attribute>
-                <xs:attribute type="xs:string" name="parameterArray" use="required"/>
-                <xs:attribute type="xs:string" name="stepKey" use="required"/>
-                <xs:attribute type="xs:string" name="before"/>
-                <xs:attribute type="xs:string" name="after"/>
+                <xs:attribute ref="parameterArray" use="required"/>
+                <xs:attributeGroup ref="commonActionAttributes"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
