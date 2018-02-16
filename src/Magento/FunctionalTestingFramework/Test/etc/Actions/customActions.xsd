@@ -85,7 +85,7 @@
     <xs:complexType name="selectMultipleOptionsType">
         <xs:annotation>
             <xs:documentation>
-                selects all given options in given Magento dropdown element.
+                Selects all given options in given Magento dropdown element.
             </xs:documentation>
         </xs:annotation>
         <xs:simpleContent>
@@ -105,7 +105,6 @@
                     </xs:annotation>
                 </xs:attribute>
                 <xs:attribute type="xs:string" name="parameterArray" use="required"/>
-                <xs:attribute type="xs:string" name="requiredAction"/>
                 <xs:attribute type="xs:string" name="stepKey" use="required"/>
                 <xs:attribute type="xs:string" name="before"/>
                 <xs:attribute type="xs:string" name="after"/>
